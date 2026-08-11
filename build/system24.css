@@ -328,7 +328,7 @@ body {
         content: 'channel';
     }
     .messagesWrapper__36d07::after {
-        content: 'chat';
+        content: '~/chat';
     }
     .channelTextArea_f75fb0::after {
         content: 'input';
