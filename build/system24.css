@@ -643,3 +643,71 @@ body {
     }
 }
 
+/* crt.css */
+/* ========================================
+   BLOODMOON CRT / PHOSPHOR EFFECT
+   ======================================== */
+
+#app-mount::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    z-index: 999998;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            color-mix(in srgb, var(--accent-active), transparent 96%),
+            transparent 70%
+        );
+
+    box-shadow:
+        inset 0 0 120px color-mix(
+            in srgb,
+            var(--accent),
+            transparent 88%
+        );
+
+    mix-blend-mode: screen;
+}
+
+#app-mount::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    z-index: 999999;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 2px,
+            color-mix(
+                in srgb,
+                var(--accent-active),
+                transparent 94%
+            ) 3px,
+            color-mix(
+                in srgb,
+                var(--accent-active),
+                transparent 94%
+            ) 4px
+        ),
+        radial-gradient(
+            ellipse at center,
+            transparent 55%,
+            color-mix(
+                in srgb,
+                var(--main),
+                transparent 60%
+            ) 100%
+        );
+
+    mix-blend-mode: overlay;
+}
