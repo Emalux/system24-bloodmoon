@@ -679,25 +679,14 @@ body {
 [class*="message"] img,
 [class*="embed"] img,
 [class*="attachment"] img {
-    filter:
-        saturate(0.45)
-        brightness(0.72)
-        contrast(0.9);
-
-    opacity: 0.78;
-
+    filter: saturate(0.5) brightness(0.78);
     transition:
-        filter 200ms ease,
-        opacity 200ms ease;
+        filter 180ms ease,
+        opacity 180ms ease;
 }
 
 [class*="message"] img:hover,
 [class*="embed"] img:hover,
 [class*="attachment"] img:hover {
-    filter:
-        saturate(1)
-        brightness(1)
-        contrast(1);
-
-    opacity: 1;
+    filter: saturate(1) brightness(1);
 }
